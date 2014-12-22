@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13040\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs28 \cf0 Shapeways Selenium Demo\
+\
+\
+I approached this problem by breaking down the Shapeways Product Detail Page into 3 parts of functionality: (Display, Discussion, Add Product)\
+\
+The Display tests verify that the TapHandle page can be loaded,  and photos can be viewed. The Discussion test verifies that a comment can be created as well as a reply to a comment. The Add Product tests that the TapHandle can be added to a WishList and Favorites list\
+\
+The code uses Selenium Webdriver 2.44 and Junit 4.11. The tests were created using Firefox. The Java project is managed by using Maven \
+(http://maven.apache.org/users/index.html)\
+The tests can be ran using the command mvn test or by using JUnit within an IDE (Eclipse, Spring Tool Suite) (If a test fails or produces an error using Maven, it should work running JUnit through the IDE\
+\
+The tests all run, and are repeatable. However there are some intermittent problems. The SignIn screen is not easily recognized within Selenium using Xpath or using element attributes. If its at all possible for someone to send an example of a better solution of how to get Selenium to find the SignIn screen.\
+I would have created more negative path tests ( ie. invalid login). Also I would test the purchase functionality, because that is a critical piece.\
+}
